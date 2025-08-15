@@ -81,13 +81,17 @@ data/raw/
 ### Example Classifications
 
 #### High Confidence Example
+<div style="text-align: center;">
 <img src="docs/online_recycle.png" alt="EcoSort app showing high confidence recycling classification" width="300" height="auto" style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+</div>
 
 **Scenario**: Clear plastic water bottle
 - **Result**: RECYCLE · plastic (94.9%)
 
 #### Low Confidence Example
+<div style="text-align: center;">
 <img src="docs/movile_unsual.png" alt="EcoSort app showing low confidence classification" width="300" height="auto" style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+</div>
 
 **Scenario**: Unrelated Picture
 - **Result**: UNSURE (52.3%)
