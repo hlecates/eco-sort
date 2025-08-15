@@ -3,7 +3,7 @@ import { coverCrop } from './crop';
 
 export async function fileToTensor(file, size, mean, std) {
   const bitmap = await createImageBitmap(file);
-  const canvas = new OffscreenCanvas ? new OffscreenCanvas(size, size) : document.createElement('canvas');
+  const canvas = typeof OffscreenCanvas !== 'undefined' ? new OffscreenCanvas(size, size) : document.createElement('canvas');
   canvas.width = size; canvas.height = size;
   const ctx = canvas.getContext('2d', { willReadFrequently: true });
 

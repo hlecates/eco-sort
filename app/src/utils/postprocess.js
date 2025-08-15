@@ -8,8 +8,10 @@ export function softmax(arr) {
 }
 
 export function decide(logits, classes) {
-  const maxIndex = logits.indexOf(Math.max(...logits));
-  const p = logits[maxIndex];
+  // Convert logits to probabilities using softmax
+  const probabilities = softmax(logits);
+  const maxIndex = probabilities.indexOf(Math.max(...probabilities));
+  const p = probabilities[maxIndex];
   const label = classes[maxIndex];
   const top = p >= THRESH_TOP ? label.split(':')[0] : 'unsure';
   return { top, label, p };

@@ -17,11 +17,11 @@ export default function App() {
     setPreviewURL(URL.createObjectURL(file));
     if (ready) {
       try {
-        const { input_size: SIZE, mean: MEAN, std: STD, classes } = labels;
+        const { input_size: SIZE, mean: MEAN, std: STD, materials } = labels;
         const tensor = await fileToTensor(file, SIZE, MEAN, STD);
         const outputs = await session.run({ [session.inputNames[0]]: tensor });
         const logits = Array.from(outputs[session.outputNames[0]].data);
-        setResult(decide(logits, classes));
+        setResult(decide(logits, materials));
       } catch (e) {
         console.error('Processing error:', e);
         setResult({ top: 'unsure', p: 0 });
