@@ -9,12 +9,27 @@ export default function ResultCard({ result }) {
   if (!result) return null;
   const { top, label, p } = result;
   const subtype = label?.split(':')[1]?.replaceAll('_',' ');
+  const percentage = (p*100).toFixed(1);
+  
   return (
     <div className="result">
-      <div>
-        <Badge top={top} /> {top !== 'unsure' && subtype ? `· ${subtype}` : ''} ({(p*100).toFixed(1)}%)
+      <div className="result-header">
+        <Badge top={top} />
+        {top !== 'unsure' && subtype && <span className="subtype">· {subtype}</span>}
       </div>
-      <div className="tips">{tipFor(top)}</div>
+      
+      <div className="percentage">
+        {percentage}%
+      </div>
+      
+      <div className="tips">
+        {tipFor(top)}
+        {top === 'unsure' && (
+          <div className="upload-again">
+            Try uploading a clearer photo or a different angle
+          </div>
+        )}
+      </div>
     </div>
   );
 }

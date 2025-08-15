@@ -1,17 +1,211 @@
-:root { --bg:#0b0b0b; --panel:#121212; --fg:#fff; --muted:#bdbdbd; --accent:#4ade80; }
-*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.4 system-ui}
-header{text-align:center;padding:20px 16px}
-.subtitle{color:var(--muted);margin:0}
-main{max-width:720px;margin:0 auto;padding:12px}
-.controls{display:flex;gap:12px;justify-content:center;margin:12px 0 18px}
-.btn{background:var(--accent);color:#000;font-weight:700;padding:12px 16px;border-radius:12px;cursor:pointer}
-.stage{background:var(--panel);border-radius:16px;padding:16px;display:flex;flex-direction:column;align-items:center}
-#preview{max-width:100%;border-radius:12px;margin-top:8px}
-.result{margin-top:14px;font-size:18px}
-.tips{margin-top:6px;color:var(--muted)}
-.badge{padding:4px 8px;border-radius:999px;font-weight:700}
-.badge.recycle{background:#3b82f6;color:#00143a}
-.badge.compost{background:#22c55e;color:#002a0e}
-.badge.landfill{background:#9ca3af;color:#101214}
-.badge.unsure{background:#f59e0b;color:#3a2400}
-.footer-note{margin:16px;text-align:center;color:var(--muted)}
+:root { 
+  --bg: #94cce9; 
+  --panel: #ffffff; 
+  --fg: #28495c; 
+  --muted: #6597ac; 
+  --accent: #5592b4; 
+  --accent-hover: #28495c;
+  --accent-light: #9cb4ce;
+  --border: #9cb4ce;
+  --shadow: rgba(40, 73, 92, 0.15);
+  --success: #458348;
+}
+
+*{box-sizing:border-box} 
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--fg);
+  font:16px/1.4 system-ui;
+  -webkit-font-smoothing: antialiased;
+}
+
+header{
+  text-align:center;
+  padding:40px 16px 32px;
+  position: relative;
+}
+
+header h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #1a2f3a;
+  margin: 0;
+  letter-spacing: -0.02em;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(135deg, #1a2f3a 0%, #28495c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle{
+  color:var(--muted);
+  margin:16px 0 0;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+main{
+  max-width:720px;
+  margin:0 auto;
+  padding:12px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.controls{
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  margin: auto 0 40px;
+  flex-wrap: wrap;
+  flex: 1;
+  align-items: center;
+}
+
+.upload-capture-container {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn{
+  background:var(--accent);
+  color:#ffffff;
+  font-weight:600;
+  padding:14px 20px;
+  border-radius:12px;
+  cursor:pointer;
+  border: none;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px var(--shadow);
+  min-width: 140px;
+}
+
+.btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-upload {
+  background: var(--accent);
+}
+
+.btn-camera {
+  background: var(--success);
+}
+
+.btn-camera:hover {
+  background: #3a6f3d;
+}
+
+.stage{
+  background:var(--panel);
+  border-radius:20px;
+  padding:24px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  box-shadow: 0 4px 20px var(--shadow);
+  border: 1px solid var(--border);
+  margin-top: auto;
+}
+
+#preview{
+  max-width:100%;
+  border-radius:16px;
+  margin-top:16px;
+  box-shadow: 0 4px 16px var(--shadow);
+}
+
+.result{
+  margin-top:20px;
+  font-size:20px;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+}
+
+.result-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.subtype {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.percentage {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 16px 0;
+  text-align: center;
+}
+
+.tips{
+  margin-top:8px;
+  color:var(--muted);
+  font-size: 14px;
+  text-align: center;
+}
+
+.upload-again {
+  margin-top: 12px;
+  padding: 12px 16px;
+  background: #fef3c7;
+  color: #92400e;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  border-left: 4px solid #f59e0b;
+}
+
+.badge{
+  padding:6px 12px;
+  border-radius:999px;
+  font-weight:700;
+  font-size: 14px;
+}
+
+.badge.recycle{
+  background:var(--accent);
+  color:#ffffff;
+}
+
+.badge.compost{
+  background:var(--success);
+  color:#ffffff;
+}
+
+.badge.landfill{
+  background:var(--muted);
+  color:#ffffff;
+}
+
+.badge.unsure{
+  background:#f59e0b;
+  color:#ffffff;
+}
+
+.footer-note{
+  margin:24px;
+  text-align:center;
+  color:var(--muted);
+  font-size: 14px;
+}

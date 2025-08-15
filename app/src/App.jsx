@@ -53,10 +53,7 @@ export default function App() {
         {previewURL && <img src={previewURL} alt="preview" id="preview" />}
         <ResultCard result={result} />
       </section>
-
-      <footer className="footer-note">
-        <small>All in your browser. No uploads. Works offline after first load.</small>
-      </footer>
+      
     </main>
   );
 }
