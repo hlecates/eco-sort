@@ -1,0 +1,9 @@
+{
+  "name": "EcoSort",
+  "short_name": "EcoSort",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0b0b0b",
+  "background_color": "#0b0b0b",
+  "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+}

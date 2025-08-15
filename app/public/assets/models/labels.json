@@ -1,0 +1,1 @@
+{"materials": ["glass", "paper", "cardboard", "plastic", "metal", "trash"], "bins": ["compost", "recycle", "landfill"], "material_to_bin": [1, 1, 1, 1, 1, 2], "mean": [0.485, 0.456, 0.406], "std": [0.229, 0.224, 0.225], "input_size": 224}
