@@ -40,12 +40,12 @@ The training dataset consists of **2,527 images** organized into 6 material cate
 
 ```
 data/raw/
-├── glass/     (100+ images)
-├── paper/     (100+ images) 
-├── cardboard/ (100+ images)
-├── plastic/   (100+ images)
-├── metal/     (100+ images)
-└── trash/     (100+ images)
+├── glass/    
+├── paper/      
+├── cardboard/ 
+├── plastic/   
+├── metal/     
+└── trash/     
 ```
 
 ### Data Processing Pipeline
