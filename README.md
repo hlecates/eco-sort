@@ -83,7 +83,7 @@ EcoSort is hosted on Cloudflare at https://eco-sort.pages.dev/.
 ### Example Classifications
 
 #### High Confidence Example
-<img src="docs/online_recycle.png" alt="EcoSort app showing high confidence recycling classification" width="300" height="auto" style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+<img src="docs/online_recycle.png" alt="EcoSort app showing high confidence recycling classification" width="600" height="auto" style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
 
 **Scenario**: Clear plastic water bottle
 - **Result**: RECYCLE · plastic (94.9%)
