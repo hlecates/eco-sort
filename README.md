@@ -1,6 +1,6 @@
 # EcoSort: AI-Powered Waste Classification
 
-EcoSort is a web-based application that uses computer vision to classify waste materials and provide recycling guidance. Built with React and ONNX Runtime Web, it runs entirely in the browser without requiring server-side processing.
+EcoSort is a web-based application that uses computer vision to classify waste materials and provide recycling guidance. I grew up in a household that took recycling seriously, and even with that background, I learned how confusing, and sometimes daunting, it can be to sort things correctly. Will I make the right call? Could I be dooming the planet? EcoSort is one small step toward making that decision easier: snap a photo and get a clear bin recommendation backed by AI.
 
 ## Model Architecture
 
@@ -99,3 +99,12 @@ EcoSort is hosted on Cloudflare at https://eco-sort.pages.dev/.
 With the goal of promoting sustainability and proper practices the following flyer (EcoSort_Flyer.png), advertises the hosted web app via a QR code. With the goal of being posted where people must make recycling descisions, at stores, schools, dumps, etc, EcoSort hopefully, in due time, will make a small contribution to saving the world. 
 
 <img src="EcoSort_Flyer.png" alt="EcoSort Flyer" width="800" height="auto" style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+
+## Next Steps
+
+[ ] Refine and optimize the model.
+   [ ] Gather more images to train on
+   [ ] Account for certain types of plastics and cardboard that can not be recycled (ie pizza boxes (due to grease))
+[ ] Expand the UI
+   [ ] Allow for user to critic model results / report incorrect assumptions which then save the photo
+   [ ] Allow for users to submit photos of items, with proper labeling
