@@ -83,13 +83,13 @@ EcoSort is hosted on Cloudflare at https://eco-sort.pages.dev/.
 ### Example Classifications
 
 #### High Confidence Example
-<img src="docs/online_recycle.png" alt="EcoSort app showing high confidence recycling classification" width="600" height="auto" style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+<img src="docs/online_recycle.png" alt="EcoSort app showing high confidence recycling classification" width="600" height="auto">
 
 **Scenario**: Clear plastic water bottle
 - **Result**: RECYCLE · plastic (94.9%)
 
 #### Low Confidence Example
-<img src="docs/mobile_unsual.png" alt="EcoSort app showing low confidence classification" width="300" height="auto" style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+<img src="docs/mobile_unsual.png" alt="EcoSort app showing low confidence classification" width="300" height="auto">
 
 **Scenario**: Unrelated Picture
 - **Result**: UNSURE (52.3%)
@@ -98,7 +98,7 @@ EcoSort is hosted on Cloudflare at https://eco-sort.pages.dev/.
 
 With the goal of promoting sustainability and proper practices the following flyer (EcoSort_Flyer.png), advertises the hosted web app via a QR code. With the goal of being posted where people must make recycling descisions, at stores, schools, dumps, etc, EcoSort hopefully, in due time, will make a small contribution to saving the world. 
 
-<img src="EcoSort_Flyer.png" alt="EcoSort Flyer" width="800" height="auto" style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+<img src="EcoSort_Flyer.png" alt="EcoSort Flyer" width="800" height="auto">
 
 ## Next Steps
 
