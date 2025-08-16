@@ -102,9 +102,9 @@ With the goal of promoting sustainability and proper practices the following fly
 
 ## Next Steps
 
-[ ] Refine and optimize the model.
-   [ ] Gather more images to train on
-   [ ] Account for certain types of plastics and cardboard that can not be recycled (ie pizza boxes (due to grease))
-[ ] Expand the UI
-   [ ] Allow for user to critic model results / report incorrect assumptions which then save the photo
-   [ ] Allow for users to submit photos of items, with proper labeling
+- Refine and optimize the model.
+   - Gather more images to train on
+   - Account for certain types of plastics and cardboard that can not be recycled (ie pizza boxes (due to grease))
+- Expand the UI
+   - Allow for user to critic model results / report incorrect assumptions which then save the photo
+   - Allow for users to submit photos of items, with proper labeling
